@@ -1,0 +1,5 @@
+{ 
+	"show last messages": "tail --lines=150 /var/log/messages",
+	"show secure log": "tail --lines=150 /var/log/secure"
+	
+}
