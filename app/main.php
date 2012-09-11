@@ -14,7 +14,7 @@
         	
         	<?php $versionCheck = new versionCheck; $checkVersion = $versionCheck->checkVersion(); ?>
 
-			<?php $uptime = new systemUptime; $getSystemUptime = $uptime->getSystemUptime();?>
+		<?php $uptime = new systemUptime; $getSystemUptime = $uptime->getSystemUptime();?>
         	
         	<div class="clear"></div>
         	
@@ -51,23 +51,4 @@
     </div>
     
     <?php require('_lib/includes/_footer.php'); ?>
-    
-   <script type="text/javascript">
-	<!--
-	function rebootWarn() {
-		var answer = confirm("WARNING: This will make your Raspberry Pi temporarily unavailable, it may also connect back to the network with a different IP.")
-		if (answer){
-			alert("Rebooting...!")
-			window.location = "_lib/commands/_reboot.php";
-		}
-		else{
-			alert("Reboot Aborted")
-		}
-	}
-    
-	function firmwareMsg() {
-		alert("Firmware updating")
-		window.location = "_lib/commands/_updatefirmware.php";
-	}
-	//-->
-	</script>
+
