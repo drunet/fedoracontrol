@@ -4,7 +4,7 @@
 	require('_lib/classes/_cpu.php'); 
 	require('_lib/classes/_uptime.php'); 
 	require('_lib/includes/_header.php'); 
-    require('_lib/classes/_network.php');
+        require('_lib/classes/_network.php');
 	require('_lib/classes/_who.php');
 	require('_lib/classes/_versionCheck.php'); 
             
