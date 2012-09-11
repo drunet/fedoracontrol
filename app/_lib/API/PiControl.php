@@ -1,8 +1,5 @@
 <?php
-                if($_GET['action'] == 'reboot'){
-                        system('reboot');
-                }
-	
+              
                 if($_GET['action'] == 'stats'){
                         $uptime = shell_exec("cat /proc/uptime");
 			$uptime = explode(" ", $uptime);          
@@ -48,7 +45,7 @@
 			$uptime = "Uptime:\n" . preg_replace('/\s+/',' ',$string);
 $getLoad = sys_getloadavg();
 		  
-		  $rawCPUSpeed = shell_exec('cat /proc/cpuinfo | grep BogoMIPS');
+		  $rawCPUSpeed = shell_exec('cat /proc/cpuinfo | grep bogomips');
 		  $cpuSpeed = str_replace("BogoMIPS	: ", "", "$rawCPUSpeed");
                         $cpu = "CPU Load:\n1 min: " . $getLoad[0] . "\n" . "5 mins: " . $getLoad[1] . "\n" . "15 mins: " . $getLoad[2] . "\n" . "CPU Speed: " . $cpuSpeed . " MHz";
 
